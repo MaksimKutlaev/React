@@ -1,14 +1,13 @@
 import './App.css';
 import TemperatureConverter from './components/TemperatureConverter';
 import TodoList from './components/TodoList';
+import TodoList_fix from './components/TodoList_fix';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <TemperatureConverter /> */}
-        <TodoList />
-      </header>
+    <div className="center">
+      {/* <TemperatureConverter /> */}
+      <TodoList_fix />
     </div>
   );
 }
