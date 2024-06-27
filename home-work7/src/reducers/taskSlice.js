@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const getTasks = createAsyncThunk("getTasks", async () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      fetch("../public/tasks.json")
+      fetch("../data/tasks.json")
         .then((response) => response.json())
         .then((data) => resolve(data))
         .catch((error) => reject(error));
